@@ -1,0 +1,53 @@
+body{
+    font-family: 'Sen', sans-serif;
+    background-color: #ebebeb;
+}
+.container{
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+}
+.retorna{
+    padding-top: 30px;
+}
+.retorna a{
+    text-decoration: none;
+    color: #2C7DA0;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.titulo{
+    text-align: center;
+}
+.link{
+    display: flex;
+    color: #2C7DA0;
+}
+.link a{
+    text-decoration: none;
+    color: #2C7DA0;
+    font-weight: bold;
+    line-height: 310%;
+}
+.hero{
+    display: flex;
+    background-color: #2C7DA0;
+    color: white;
+}
+.hero img{
+    width: 50%;
+}
+.hero p{
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-size: 18px;
+}
+.paginas{
+    display: flex;
+    text-align: center;
+}
+.paginas img{
+    width: 100%;
+}

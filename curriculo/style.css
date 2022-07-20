@@ -1,0 +1,160 @@
+body{
+    background-color: #FFFFFF;
+    font-family: 'Arimo', sans-serif;
+}
+.container{
+    width: 960px;
+    margin: auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    
+}
+.colunas{
+    display: flex;
+}
+.col1{
+    width: 1000px;
+    background-color: #335384;
+    color: #FFFFFF;
+    padding-top: 30px;
+}
+figure img{
+    width: 100%;
+    border-radius: 50%;
+}
+.contato{
+    padding: 30px 40px 1px 50px;
+    letter-spacing: 2px;
+}
+.linkhome a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 20px;
+}
+.col1 h3{
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+.col1 p{
+    font-size: 10px;
+}
+.skills{
+    padding: 30px 40px 1px 50px;
+    letter-spacing: 2px;
+}
+.certificados{
+    padding: 30px 20px 1px 50px;
+    letter-spacing: 2px; 
+}
+.imglocal{
+    line-height: 50px;
+    padding-right: 10px;
+}
+.imgemail{
+    line-height: 40px;
+    padding-right: 10px;
+}
+.imgsite{
+    line-height: 40px;
+    padding-right: 10px;
+}
+.imglinkedin{
+    line-height: 40px;
+    padding-right: 10px;
+}
+.imglinkedin a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.nivel{
+    line-height: 25px;
+    padding-right: 10px;
+}
+.imgcertificado{
+    line-height: 40px;
+    padding-right: 10px;
+}
+.col2{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.download{
+    padding-bottom: 100px;
+    padding-left: 350px;
+}
+.download a{
+    text-decoration: none;
+    color: #335384;
+    font-weight: bold;
+ 
+}
+.nome{
+    color: #335384;
+    font-size: 30px;
+}
+.nome h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.profissao{
+    margin-top: 25px;
+    color: #62A5C5;
+    font-size: 12px;
+    padding-bottom: 40px;
+    letter-spacing: 3px;
+}
+.profile h3{
+    color: #62A5C5;
+    font-size: 12px;
+    letter-spacing: 3px; 
+}
+.experiencia{
+    margin-top: 40px;
+}
+.experiencia h3{
+    color: #62A5C5;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.experiencia h4{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+.experiencia h5{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    color: gray;
+}
+.experiencia p{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+.educacao h3{
+    color: #62A5C5;
+    font-size: 12px; 
+    letter-spacing: 3px;
+}
+.educacao{
+    margin-top: 40px;
+}
+.educacao h4{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+.educacao h5{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    color: gray;
+}
+.col2 p{
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+.col2 li{
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+
