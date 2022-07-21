@@ -1,0 +1,64 @@
+*{
+    font-family: 'Poppins', sans-serif;
+   
+}
+body{
+    background-color: #ebebeb;
+}
+.container{
+    
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+}
+.retorna{
+    padding-top: 30px;
+}
+.retorna a{
+    
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    font-size: 20px;
+    
+    
+}
+.titulo{
+    text-align: center;
+}
+.link{
+    display: flex;
+    color: brown;
+}
+.link a{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+    line-height: 310%;
+}
+.hero{
+    display: flex;
+    background-color: #2C7DA0;
+    color: white;
+}
+.hero img{
+    width: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.info p{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    font-size: 18px;
+    
+}
+.paginas{
+    
+    text-align: center;
+}
+.paginas img{
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
