@@ -49,3 +49,51 @@ function animarScroll(){
 }
 
 window.addEventListener('scroll',animarScroll);
+
+function ampliarclapale(){
+    
+    var subir = document.querySelector('div#ampliarclapale');
+    subir.addEventListener('mouseover', entrar);
+    subir.addEventListener('mouseout', sair);
+
+    function entrar(){
+        subir.style.transform = "translateY(-20px)";
+        subir.style.transition = "all 0.3s";
+    };
+    function sair(){
+        subir.style.transform = "translateY(0px)";
+        subir.style.transition = "all 0.3s";
+    };
+}
+
+function ampliarhotel(){
+    
+    var subir = document.querySelector('div#ampliarhotel');
+    subir.addEventListener('mouseover', entrar);
+    subir.addEventListener('mouseout', sair);
+
+    function entrar(){
+        subir.style.transform = "translateY(-20px)";
+        subir.style.transition = "all 0.3s";
+    };
+    function sair(){
+        subir.style.transform = "translateY(0px)";
+        subir.style.transition = "all 0.3s";
+    };
+}
+
+function ampliarvozdopovo(){
+    
+    var subir = document.querySelector('div#ampliarvozdopovo');
+    subir.addEventListener('mouseover', entrar);
+    subir.addEventListener('mouseout', sair);
+
+    function entrar(){
+        subir.style.transform = "translateY(-20px)";
+        subir.style.transition = "all 0.3s";
+    };
+    function sair(){
+        subir.style.transform = "translateY(0px)";
+        subir.style.transition = "all 0.3s";
+    };
+}
