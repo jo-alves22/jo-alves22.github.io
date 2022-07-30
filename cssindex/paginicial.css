@@ -1,6 +1,5 @@
 body{
     
-    /* width: 1060px; */
     margin:auto;
     
 }
@@ -15,42 +14,70 @@ body{
 .cabecalho a{
     color: white;
 }
+
 header{
     background-color: #335384;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 200px;
-    padding-right: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 200px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    
 }
-header a{
+header .logo{
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     text-decoration: none;
     font-family: 'Sen', sans-serif;
 }
-header a:hover{
+header.stick{
+    background: #fff;
+    padding: 05px 200px;
+    box-shadow: 0 5px 20px rgba(0,0,0, 0.05);
+}
+header.stick .logo{
+    color: #111;
+}
+
+header .navBar{
+    position: relative;
+    display: flex;
+}
+header .navBar li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+header .navBar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    
+}
+
+header.stick .navBar li a{
+    color: #111;
+   
+}
+header .navBar li a:hover{
     color: rgb(0, 128, 128);
 }
 .about:hover{
     color: rgb(0, 128, 128);
 }
-.dropdown-menu{
-    text-decoration: none;
-    
-}
-
-nav a{
-    padding-left: 40px;
-    font-size: 25px;
-    line-height: 50px;
-}
-.btn{
-    line-height: 60px;
+.logo:hover{
+    color: rgb(0, 128, 128);
 }
 .hero{
-    margin-top: 70px;
+    margin-top: 150px;
     padding-left: 240px;
     padding-right: 200px;
+    display: flex;
 }
 .hero h1{
     font-size: 50px;
@@ -72,7 +99,6 @@ nav a{
     color: rgb(0, 128, 128);
     padding-bottom: 100px;
 }
-
 .hero figure{
     width: 700px;
     margin-inline-end: 0px;
@@ -119,6 +145,7 @@ img{
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #ebebeb;
+    display: flex;
 }
 .sobre figure{
     width: 1500px;
@@ -144,7 +171,9 @@ footer a{
 footer svg{
     color: white;
 }
-
+.rodape{
+    display: flex;
+}
 .topo{
     background: #fff;
     position: fixed;
@@ -176,4 +205,107 @@ footer svg{
 }
 .sobrex img{
     border-radius: 100%;
+}
+
+@media (max-width: 991px){
+    header, header.stick{
+        padding: 10px 20px;
+        /* background: rgba(212, 190, 190, 0.6); */
+    }
+    header .navBar{
+        display: none;
+    }
+
+    header .navBar.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navBar li{
+        margin-left: 0;
+    }
+    header .navBar li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('../images/menu.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .menuToggle.active{
+        background: url('../images/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.3s;
+    }
+    
+    header .menuToggle{
+        filter: invert(1);
+    }
+    header.stick .menuToggle{
+        filter: invert(1);
+    }
+    .hero{
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+    }
+    .dados{
+        text-align: center;
+        padding-top: 130px;
+        margin-bottom: 40px;
+    }
+    .hero figure{
+        display: none;
+    }
+    .organiza{
+        display: flex;
+        justify-content: space-around; 
+        flex-wrap: wrap;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .sobre{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #ebebeb;
+        display: block;
+    }
+    .sobre figure{
+        width: 100%;
+        margin-right: 0;
+        padding-top: 30px;
+    }
+    footer{
+        font-family: 'Sen', sans-serif;
+        font-size: 20px;
+        background-color:black;
+        color: white;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 300px;
+    }
+    .rodape{
+        display: block;
+    }
 }

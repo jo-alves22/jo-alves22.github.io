@@ -31,9 +31,27 @@ function voltacorvoz(){
     var coritem = document.getElementById("dropdown-voz");
     coritem.style.color="white";
 }
+
+// Função para efeito da navbar
+addEventListener('scroll', function(){
+    const header = document.querySelector('header');
+    header.classList.toggle("stick", window.scrollY > 0);
+});
+
+// /função botão menu
+function toggleMenu(){
+    const menuToggle = document.querySelector('.menuToggle');
+    
+    const navBar = document.querySelector('.navBar');
+    
+    menuToggle.classList.toggle('active');
+    navBar.classList.toggle('active');
+}
+
+// Função volta ao topo
 const scrollAnima = document.querySelector('[data-anima="scroll"]');
 
-const metadeWindow = window.innerHeight * 2.0;
+const metadeWindow = window.innerHeight * 5.0;
 console.log(metadeWindow);
 function animarScroll(){
     const topoItem = scrollAnima.getBoundingClientRect().top;
