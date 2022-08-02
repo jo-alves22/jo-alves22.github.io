@@ -192,6 +192,7 @@ footer svg{
     right: 20px;
 }
 .sobrex{
+    display: flex;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -307,5 +308,18 @@ footer svg{
     }
     .rodape{
         display: block;
+    }
+    .sobrex{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #ebebeb;
+    }
+    .sobrex figure{
+        width: 100%;
+        margin-right: 0;
+        padding-top: 30px;
     }
 }

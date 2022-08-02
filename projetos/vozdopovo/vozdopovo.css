@@ -51,3 +51,26 @@ body{
 .paginas img{
     width: 100%;
 }
+@media (max-width: 991px){
+    .hero{
+        display: block;
+    }
+    .container{
+        width: 100%;
+        margin: auto;
+        padding-top: 0px;
+    }
+    .hero p{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    .hero img{
+        width: 100%;
+    }
+    .paginas{
+        display: block;
+        text-align: center;
+    }
+}
