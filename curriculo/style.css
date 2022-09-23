@@ -55,13 +55,17 @@ figure img{
 }
 .imggithub{
     line-height: 40px;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 .imglinkedin{
     line-height: 40px;
     padding-right: 10px;
 }
 .imglinkedin a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.imggithub a{
     text-decoration: none;
     color: #ffffff;
 }
