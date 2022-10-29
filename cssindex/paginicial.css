@@ -29,11 +29,9 @@ header{
     transition: 0.5s;
     
 }
-header .logo{
-    color: white;
-    font-size: 40px;
-    text-decoration: none;
-    font-family: 'Sen', sans-serif;
+
+header img{
+    width: 60px;
 }
 header.stick{
     background: #fff;
