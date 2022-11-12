@@ -109,6 +109,10 @@ img{
 .texto{
     font-family: 'Sen', sans-serif;
     font-size: 20px;
+    /*padding-right: 400px;*/
+    margin-top: 100px;
+    margin-right: 200px;
+    width: 60%;
 }
 .projetos{
     background-color: #335384;
@@ -132,8 +136,7 @@ img{
 .cards{
     text-align: center;
     background-color: #ebebeb;
-    box-shadow: 0 5px 30px rgba(0,0,0, 0.5);
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     
 }
 .cards h1{
@@ -148,7 +151,7 @@ img{
     display: flex;
 }
 .sobre figure{
-    width: 1500px;
+    width: 40%;
     margin-right: 0;
     padding-top: 30px;
 }
@@ -290,6 +293,11 @@ footer svg{
         padding-bottom: 30px;
         background-color: #ebebeb;
         display: block;
+    }
+
+    .texto{
+        margin-top: 20px;
+        width: 100%;
     }
     .sobre figure{
         width: 100%;
