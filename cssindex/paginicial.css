@@ -15,6 +15,21 @@ body{
     color: white;
 }
 
+.logo1{
+
+    background: url('../images/NewLogo.png');
+    background-position: center;
+    position: relative;
+    width: 100px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
 header{
     background-color: #335384;
     position: fixed;
@@ -34,7 +49,7 @@ header img{
     width: 60px;
 }
 header.stick{
-    background: #fff;
+    background: #335384;
     padding: 05px 200px;
     box-shadow: 0 5px 20px rgba(0,0,0, 0.05);
 }
@@ -59,7 +74,7 @@ header .navBar li a{
 }
 
 header.stick .navBar li a{
-    color: #111;
+    color: white;
    
 }
 header .navBar li a:hover{
@@ -197,24 +212,28 @@ footer svg{
 .sobrex{
     display: flex;
     padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
+
+  
     padding-bottom: 10px;
     background-color: #ebebeb;
 }
 .sobrex figure{
-    width: 1500px;
+    width: 800px;
     margin-right: 0;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 .sobrex img{
     border-radius: 100%;
+}
+.sobrextexto{
+    margin-top: 10px;
+    margin-right: 100px;
+    width: 70%;
 }
 
 @media (max-width: 991px){
     header, header.stick{
         padding: 10px 20px;
-        /* background: rgba(212, 190, 190, 0.6); */
     }
     header .navBar{
         display: none;
@@ -240,6 +259,7 @@ footer svg{
         color: #111;
         font-size: 1.6em;
     }
+
     .menuToggle{
         position: relative;
         width: 40px;
@@ -258,6 +278,7 @@ footer svg{
         background-position: center;
         transition: 0.3s;
     }
+    
     
     header .menuToggle{
         filter: invert(1);
@@ -325,6 +346,7 @@ footer svg{
         padding-bottom: 10px;
         background-color: #ebebeb;
     }
+    
     .sobrex figure{
         width: 100%;
         margin-right: 0;

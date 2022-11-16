@@ -35,8 +35,12 @@ function voltacorvoz(){
 // Função para efeito da navbar
 addEventListener('scroll', function(){
     const header = document.querySelector('header');
+    const logo = document.querySelector('logo');
     header.classList.toggle("stick", window.scrollY > 0);
+   
 });
+
+
 
 // /função botão menu
 function toggleMenu(){
