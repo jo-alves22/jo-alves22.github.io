@@ -17,23 +17,14 @@
     <div class="begin" id="topo"></div>
     <header>
         <div class="colunas cabecalho" id="cabecalho">
-            <a href="index.html" class="logo1" id="logo">
-                <!--
-                <picture>
-                    <img src="" alt="logotipo">
-                </picture>
-                -->
-            </a>
-
-
-            
+            <a href="index.html" class="logo" id="logo"></a>
 
             <div class="menuToggle" onclick="toggleMenu();"></div>
 
             <ul class="navBar">
                 <li><a href="#inicioprojetos" onclick="toggleMenu();" onmouseover="mudacormenu()"; onmouseout="voltacormenu();">Projetos</a></li>
-                <li><a href="curriculo/curriculo.html" onclick="toggleMenu();">Currículo</a></li>
-                <li><a role="button" data-bs-toggle="modal" data-bs-target="#infosobre" class="about" onclick="toggleMenu();">Sobre</a></li>
+                <!--<li><a href="curriculo/curriculo.html" onclick="toggleMenu();">Currículo</a></li>-->
+                <li><a href="#sobre" onclick="toggleMenu();">Sobre</a></li>
                 <li><a href="#rodape" onclick="toggleMenu();">Contato</a></li>
             </ul>
 
@@ -43,7 +34,7 @@
     <main>
         <div class="hero colunas">
             <div class="dados">
-                <h2 class="nome">Jonas Alves</h2>
+                <h1 class="nome">Jonas Alves</h1>
                 <h2 class="goal">Back-end Developer</h2>
                 <h2>Desenvolva, evolua e melhore</h2>
             </div>
@@ -56,23 +47,33 @@
                 <h1>Projetos Desenvolvidos</h1>
             </div>
             <div class="organiza">
-              
-                <!-- <div class="cards" id="ampliarclapale" onmouseover="ampliarclapale();"> -->
                 <div class="cards" id="ampliarclapale">
-                    <h1>Clapale Doces</h1>
-                    <a href="projetos/clapale/clapale.html"><img src="images/Clapale.png" alt=""></a>
+                    <a href="projetos/clapale/clapale.html">
+                    <h2>Clapale Doces</h2>
+                    <img src="images/Clapale.png" alt="">
+                    <p>Site para divulgação e recebimento de pedidos de confeitaria. </p>
+                    <p>Tecnologias: HTML, CSS</p>
+                    </a>
                 </div>
                 <div class="cards" id="ampliarhotel">
-                    <h1>Hotel Campos Elíseos</h1>
-                    <a href="projetos/hotel/hotel.html"><img src="images/Hotel.png" alt=""></a> 
+                    <a href="projetos/hotel/hotel.html">
+                    <h2>Hotel Campos Elíseos</h2>
+                    <img src="images/Hotel.png" alt="">
+                    <p>Website destinado a divulgação e gestão dos serviços hoteleiros</p>
+                    <p>Tecnologias: HTML, CSS, JavaScript</p>
+                    </a> 
                 </div>
                 <div class="cards" id="ampliarvozdopovo">
-                    <h1>Voz do Povo</h1>
-                    <a href="projetos/vozdopovo/vozdopovo.html"><img src="images/Vozdopovo.png" alt=""></a>
+                    <a href="projetos/vozdopovo/vozdopovo.html">
+                    <h2>Voz do Povo</h2>
+                    <img src="images/Vozdopovo.png" alt="">
+                    <p>Plataforma para comunicação situações-problema na gestão pública</p>
+                    <p>Tecnologias: HTML, CSS, JavaScript</p>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="sobre colunas">
+        <div class="sobre colunas" id="sobre">
             <div class="texto">
             <h3><strong>Sobre mim</strong></h3>
             <p>Olá, eu sou o Jonas. Seja bem vindo ao meu portfólio.</p>
@@ -92,6 +93,9 @@
             <p>
                 É muito mais do que uma profissão, é uma paixão.
             </p>
+            <div class="linkcurriculo">
+                <a href="curriculo/curriculo.html">Currículo</a>
+            </div>
             </div>
             <figure>
                 <img src="images/perfil1.jpg" alt="">
