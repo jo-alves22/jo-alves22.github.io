@@ -52,6 +52,7 @@ function toggleMenu(){
     navBar.classList.toggle('active');
 }
 
+
 // Função volta ao topo
 const scrollAnima = document.querySelector('[data-anima="scroll"]');
 
