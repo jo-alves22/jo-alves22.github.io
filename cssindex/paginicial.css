@@ -16,7 +16,7 @@ body{
 }
 
 .logo{
-    background: url('../images/LogoTipo.png');
+    background: url('../images/LogoSVG.svg');
     background-position: center;
     position: relative;
     width: 100px;
