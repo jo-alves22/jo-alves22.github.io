@@ -14,6 +14,11 @@ body{
 .retorna{
     padding-top: 30px;
 }
+
+.retorna a:hover{
+    color: rgb(0, 128, 128);
+}
+
 .retorna a{
     
     text-decoration: none;
@@ -61,6 +66,26 @@ body{
     width: 100%;
     margin-bottom: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.topo{
+    background: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+
+}
+.topo img{
+    width: 50px;
+}
+.show-button .topo{
+    right: 200px;
 }
 @media (max-width: 991px){
     .container{

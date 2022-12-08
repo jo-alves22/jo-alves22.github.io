@@ -30,6 +30,9 @@ figure img{
     color: #ffffff;
     padding-left: 20px;
 }
+.linkhome a:hover{
+    color: rgb(0, 128, 128);
+}
 .col1 h3{
     font-size: 15px;
     letter-spacing: 3px;
