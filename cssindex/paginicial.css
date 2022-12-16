@@ -91,7 +91,7 @@ header .navBar li a:hover{
 .hero{
     margin-top: 100px;
     padding-left: 200px;
-    padding-right: 100px;
+    padding-right: 0px;
     display: flex;
     background-color: #FDFDFF;
 
@@ -146,19 +146,22 @@ img{
     background-color: #335384;
     color: white;
     text-align: center;
-    height: 90px;
+    height: 150px;
+
 }
 .inicioprojetos h1{
-    line-height: 170%;
+    padding-top: 90px;
     font-size: 50px;
 }
 .organiza{
     display: flex;
     justify-content: space-around; 
     flex-wrap: wrap;
+    margin-top: 80px;
     margin-left: 280px;
     margin-right: 280px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
+
 }
 .cards{
     text-align: center;
@@ -180,11 +183,46 @@ img{
     color: #335384;
     font-weight: bold;
 }
+.experiencia{
+    background-color: #335384;
+    text-align: center;
+    padding-left: 192px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+}
+.experiencia h1{
+    color: #ffffff;
+    font-size: 50px;
+
+}
+.experiencia p{
+    color: #ffffff;
+}
+.linguagens{
+    display: flex;
+    margin-top: 80px;    
+}
+.tech-icon{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 100px;
+    
+}
+.icone{
+    align-items: center;
+    padding: 10px;
+}
+.atualmente{
+    text-align: left;
+}
+
 .sobre{
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     background-color: #ebebeb;
     display: flex;
 }
@@ -389,7 +427,26 @@ footer svg{
         padding-top: 30px;
     }
     
+    .experiencia{
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
 
+    .linguagens{
+        display: block;
+        margin-top: 50px;    
+    }
+
+    .col-6{
+        width: 100%;
+    }
+    .tech-icon{
+        padding-left: 0;
+    }
+    .atualmente.col-6{
+        width: 100%;
+    }
     footer{
         font-family: 'Sen', sans-serif;
         font-size: 20px;
