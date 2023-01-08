@@ -2,24 +2,99 @@ body{
     font-family: 'Sen', sans-serif;
     background-color: #ebebeb;
 }
+
+.colunas{
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalho{
+    width: 100%;
+    color: white;
+}
+.cabecalho a{
+    color: white;
+}
+
+.logo{
+    background: url('../../images/Logo.svg');
+    background-position: center;
+    position: relative;
+    width: 100px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+header{
+    background-color: #335384;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 200px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+
+header img{
+    width: 60px;
+}
+header.stick{
+    background: #335384;
+    padding: 05px 200px;
+    box-shadow: 0 5px 20px rgba(0,0,0, 0.05);
+}
+header.stick .logo{
+    color: #111;
+}
+
+header .navBar{
+    position: relative;
+    display: flex;
+}
+header .navBar li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+header .navBar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    
+}
+
+header.stick .navBar li a{
+    color: white;
+   
+}
+header .navBar li a:hover{
+    color: rgb(0, 128, 128);
+}
+.linha:hover{
+    color: rgb(0, 128, 128);
+}
+.about:hover{
+    color: rgb(0, 128, 128);
+}
+.logo:hover{
+    color: rgb(0, 128, 128);
+}
+
 .container{
     width: 60%;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 140px;
 }
-.retorna{
-    padding-top: 30px;
-}
-.retorna a{
-    text-decoration: none;
-    color: #2C7DA0;
-    font-weight: bold;
-    font-size: 20px;
-    
-}
-.retorna a:hover{
-    color: rgb(0, 128, 128);
-}
+
 .titulo{
     text-align: center;
 }
@@ -31,7 +106,6 @@ body{
     text-decoration: none;
     color: #2C7DA0;
     font-weight: bold;
-    line-height: 310%;
 }
 
 .hero{
@@ -76,7 +150,129 @@ body{
 .show-button .topo{
     right: 200px;
 }
+footer{
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+    background-color:black;
+    color: white;
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 300px;
+}
+footer a{
+    text-decoration: none;
+}
+footer svg{
+    color: white;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+}
 @media (max-width: 991px){
+    header, header.stick{
+        padding: 10px 20px;
+    }
+    header .navBar{
+        display: none;
+    }
+
+    header .navBar.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navBar li{
+        margin-left: 0;
+    }
+    header .navBar li a{
+        color: #111;
+        font-size: 1.6em;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        /*background: url('../images/menu.png');*/
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .menuToggle.active{
+        /*background: url('../images/close.png');*/
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.3s;
+    }
+    
+    
+    header .menuToggle{
+        filter: invert(1);
+    }
+    header.stick .menuToggle{
+        filter: invert(1);
+    }
+
+    .logo{
+        background-size: 60px;
+    }
+
+    .centrar {
+        margin-top: 5px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+  
+    #hamburguer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+    }
+  
+    #hamburguer:focus {
+        outline: none;
+    }
+     /*
+    #hamburguer:hover .linha,
+    #hamburguer:focus .linha {
+       background-color: green;
+    }
+  */
+    .linha {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        transition: transform 0.3s;
+    }
+  
+    .aberto .linha-1 {
+        transform: rotate(-42deg) translate(-11px, 2px);
+    }
+    .aberto .linha-2 {
+        transform: scaleX(0);
+    }
+    .aberto .linha-3 {
+        transform: rotate(42deg) translate(-16px, -8px);
+    }
     .hero{
         display: block;
     }
@@ -97,5 +293,18 @@ body{
     .paginas{
         display: block;
         text-align: center;
+    }
+    footer{
+        font-family: 'Sen', sans-serif;
+        font-size: 20px;
+        background-color:black;
+        color: white;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 350px;
+    }
+    .rodape{
+        display: block;
     }
 }

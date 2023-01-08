@@ -100,13 +100,7 @@ header .navBar li a:hover{
     margin: auto;
     padding-top: 140px;
 }
-.retorna{
-    padding-top: 30px;
-}
 
-.retorna a:hover{
-    color: rgb(0, 128, 128);
-}
 
 .titulo{
     text-align: center;
