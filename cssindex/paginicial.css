@@ -234,6 +234,9 @@ img{
 .sobre img{
     border-radius: 100%;
 }
+.sobre a{
+    text-decoration: none;
+}
 .linkcurriculo{
     background-color: #335384;
     color: #ffffff;
@@ -242,12 +245,7 @@ img{
     border-radius: 10px;
     text-align: center;
 }
-.linkcurriculo a{
-    text-decoration: none;
-    color: #ffffff;
-
-}
-.linkcurriculo a:hover{
+.linkcurriculo span:hover{
     color: rgb(0, 128, 128);
 }
 footer{
